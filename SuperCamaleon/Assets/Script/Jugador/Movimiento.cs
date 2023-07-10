@@ -8,11 +8,20 @@ public class Movimiento : MonoBehaviour
     public float speed;
     private Rigidbody rb;
     public float jumpForce;
+
+    public float turnSmoothTime = 0.1f;
+
+    float turnsmoothVelocity;
+
+    public Transform cam;
+    
+    private CharacterController characterController;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        characterController = GetComponent<CharacterController>();
         
     }
 
@@ -22,17 +31,24 @@ public class Movimiento : MonoBehaviour
         float hor = Input.GetAxisRaw("Horizontal");
         float ver = Input.GetAxisRaw ("Vertical");
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-           
-            rb.AddForce(new Vector3(0, jumpForce, 0));
-        }
-        if (hor != 0.0f || ver != 0.0f)
-        {
-            Vector3 dir = transform.forward * ver + transform.right * hor;
+        Vector3 direccion = new Vector3 (hor,0f ,ver).normalized;
 
-            rb.MovePosition(transform.position + dir * speed * Time.deltaTime);
+        
+        if(direccion.magnitude >= 0.1f)
+        {
+            float targetAngle = MathF.Atan2(direccion.x, direccion.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnsmoothVelocity, turnSmoothTime);
+
+
+            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+
+            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+
+            characterController.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+
+        
         
 
     }
