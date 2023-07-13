@@ -151,11 +151,105 @@ public class Boss : MonoBehaviour
                         }
 
                         break;
+
+                    case 4:
+                        if(fase == 2)
+                        {
+                            jump_distance += 1 * Time.deltaTime;
+                            ani.SetBool("walk", false);
+                            ani.SetBool("run", false);
+                            ani.SetBool("attack", true);
+                            ani.SetFloat("skill", 0);
+                            hit_Select = 3;
+                            rango.GetComponent<CapsuleCollider>().enabled = false;
+                            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 0.5f);
+
+
+                        }
+                        else
+                        {
+                            rutina = 0;
+                            cronometro = 0;
+                        }
+
+                        break;
                 }
             }
 
 
         }
+    }
+
+
+
+    public void Final_Ani()
+    {
+        rutina = 0;
+        ani.SetBool("attack", false);
+        atacando = false;
+        rango.GetComponent<CapsuleCollider>().enabled = true;
+        lanza_llamas = false;
+        jump_distance = 0;
+        direction_skill = false;
+    }
+
+    public void Direction_Attack_Start()
+    {
+        direction_skill = true;
+    }
+
+    public void Direction_Attack_Final()
+    {
+        direction_skill = false;
+    }
+
+    public void ColliderWeaponTrue()
+    {
+        hit[hit_Select].GetComponent<SphereCollider>().enabled = true;
+    }
+    public void ColliderWeaponFalse()
+    {
+        hit[hit_Select].GetComponent<SphereCollider>().enabled = false;
+    }
+
+    //lanzallama
+
+    public GameObject GetBala()
+    {
+        for(int i = 0; i < pool.Count; i++)
+        {
+            if (!pool[i].activeInHierarchy)
+            {
+                pool[i].SetActive(true);
+                return pool[i];
+            }
+        }
+        GameObject obj = Instantiate(fire, cabeza.transform.position, cabeza.transform.rotation) as GameObject;
+        pool.Add(obj);
+        return obj;
+    }
+
+
+    public void LanzaLlamas_Skill()
+    {
+        cronometro2 += 1 * Time.deltaTime;
+        if(cronometro2 > 0.1f)
+        {
+            GameObject obj = GetBala();
+            obj.transform.position = cabeza.transform.position;
+            obj.transform.rotation = cabeza.transform.rotation;
+            cronometro2 = 0;
+        }
+    }
+
+    public void Start_Fire()
+    {
+        lanza_llamas = true;
+    }
+
+    public void Stop_Fire()
+    {
+        lanza_llamas = false;
     }
 
 
