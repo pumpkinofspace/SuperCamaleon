@@ -252,5 +252,61 @@ public class Boss : MonoBehaviour
         lanza_llamas = false;
     }
 
+    public GameObject Get_Fire_Ball()
+    {
+        for (int i = 0; i < pool2.Count; i++)
+        {
+            if (!pool2[i].activeInHierarchy)
+            {
+                pool2[i].SetActive(true);
+                return pool2[i];
+            }
+        }
+        GameObject obj = Instantiate(fire_ball, Point.transform.position, Point.transform.rotation) as GameObject;
+        pool2.Add(obj);
+        return obj;
+    }
 
+    public void Fire_Ball_Skill()
+    {
+        GameObject obj = Get_Fire_Ball();
+        obj.transform.position = Point.transform.position;
+        obj.transform.rotation = Point.transform.rotation;
+
+    }
+
+    public void Vivo()
+    {
+        if(HP_Min < 500)
+        {
+            fase = 2;
+            time_rutinas = 1;
+        }
+
+        Comportamiento_Boss();
+
+        if (lanza_llamas)
+        {
+            LanzaLlamas_Skill();
+        }
+
+    }
+
+    private void Update()
+    {
+        barra.fillAmount = HP_Min / HP_Max;
+        if(HP_Min > 0)
+        {
+            Vivo();
+        }
+        else
+        {
+            if (!muerto)
+            {
+                ani.SetTrigger("dead");
+                musica.enabled = false;
+                muerto = true;
+            }
+        }
+    }
 }
