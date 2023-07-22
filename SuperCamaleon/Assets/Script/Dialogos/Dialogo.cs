@@ -26,7 +26,11 @@ public class Dialogo : MonoBehaviour
             {
                 NextDialogo();
             }
-           
+            else
+            {
+                StopAllCoroutines();
+                textoDialogo.text = lineasDialogo[lineaIndex];
+            }           
         }
     }
 
@@ -36,6 +40,7 @@ public class Dialogo : MonoBehaviour
         marcaDeDialogo.SetActive(false);
         panelDialogo.SetActive(true);
         lineaIndex = 0;
+        Time.timeScale = 0;
         StartCoroutine(ShowLine());
     }
 
@@ -51,7 +56,7 @@ public class Dialogo : MonoBehaviour
             dialogoEstado = false;
             panelDialogo.SetActive(false);
             marcaDeDialogo.SetActive(true);
-
+            Time.timeScale = 1;
         }
     }
 
@@ -62,7 +67,7 @@ public class Dialogo : MonoBehaviour
         foreach(char ch in lineasDialogo[lineaIndex])
         {
             textoDialogo.text += ch;
-            yield return new WaitForSeconds(tiempoEscritura);
+            yield return new WaitForSecondsRealtime(tiempoEscritura);
         }
     }
 
