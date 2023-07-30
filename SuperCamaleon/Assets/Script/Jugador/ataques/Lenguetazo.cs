@@ -32,6 +32,10 @@ public class Lenguetazo : MonoBehaviour
 
         
     }
+    private void LateUpdate()
+    {
+        DrawRope();
+    }
 
 
     private void StartGrapple()
@@ -49,7 +53,19 @@ public class Lenguetazo : MonoBehaviour
             //la distancia que sucede entre ambos puntos y todo este en orden
             joint.maxDistance = distanciaEntreElPunto * 0.8f;
             joint.minDistance = distanciaEntreElPunto * 0.25f;
+
+            //hacer luego editables para no andar batallando alv!
+            joint.spring = 4.5f;
+            joint.damper = 7f;
+            joint.massScale = 4.5f;
+
         }
+    }
+    
+    void DrawRope()
+    {
+        lr.SetPosition(0, player.position);
+        lr.SetPosition(1, puntoDeAgarre);
     }
 
     private void StopGrapple()
