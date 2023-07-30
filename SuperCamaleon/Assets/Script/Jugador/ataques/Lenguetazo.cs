@@ -59,18 +59,23 @@ public class Lenguetazo : MonoBehaviour
             joint.damper = 7f;
             joint.massScale = 4.5f;
 
+            lr.positionCount = 2;
+
         }
     }
     
     void DrawRope()
     {
+        //si no hay nada no dibujes nada
+        if (!joint) return;
         lr.SetPosition(0, player.position);
         lr.SetPosition(1, puntoDeAgarre);
     }
 
     private void StopGrapple()
     {
-
+        lr.positionCount = 0;
+        Destroy(joint);
     }
 
 
