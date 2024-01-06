@@ -14,6 +14,9 @@ public class MovementeUp : MonoBehaviour
     float yVelocity = 0f;
     bool isGrounded;
 
+    public float jumpForce = 5f; // Fuerza del salto
+    bool isJumping = false;
+
     public Transform cam;
 
     void Update()
@@ -44,6 +47,17 @@ public class MovementeUp : MonoBehaviour
         else
         {
             yVelocity = -0.5f; // Si está en el suelo, restablecer la velocidad a un valor pequeño
+        }
+
+        // Salto
+        if (isGrounded)
+        {
+            if (Input.GetButtonDown("Jump"))
+            {
+                Debug.Log("saltando");
+                yVelocity = Mathf.Sqrt(jumpForce * -2f * gravity);
+                isJumping = true;
+            }
         }
 
         Vector3 verticalVelocity = Vector3.up * yVelocity;

@@ -58,6 +58,7 @@ public class PlataformaQueCae : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             bandera = true;
+            Debug.Log("touched");
         }
     }
 }
