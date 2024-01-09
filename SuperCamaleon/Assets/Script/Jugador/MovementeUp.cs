@@ -55,7 +55,7 @@ public class MovementeUp : MonoBehaviour
             if (Input.GetButtonDown("Jump"))
             {
                 Debug.Log("saltando");
-                yVelocity = Mathf.Sqrt(jumpForce * -2f * gravity);
+                yVelocity = Mathf.Sqrt(jumpForce * 2f * gravity);
                 isJumping = true;
             }
         }
