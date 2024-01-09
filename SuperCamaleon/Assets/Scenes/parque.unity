@@ -661,6 +661,7 @@ GameObject:
   - component: {fileID: 28482195}
   - component: {fileID: 28482194}
   - component: {fileID: 28482198}
+  - component: {fileID: 28482199}
   m_Layer: 0
   m_Name: npc (11)
   m_TagString: Untagged
@@ -683,7 +684,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -768,11 +769,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - me vez la cara de pendejo o que pedo?
+  - con esto te alcanzas 15 cm de chifon
+  - no mas!
+  - ...pinchi mocoso pendejo
   tiempoEscritura: 0.05
+--- !u!65 &28482199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28482193}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.9638977, y: 2, z: 3.1097343}
+  m_Center: {x: 1.3354671, y: 0, z: 0.35966384}
 --- !u!1 &29147517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,6 +1232,7 @@ GameObject:
   - component: {fileID: 64838608}
   - component: {fileID: 64838607}
   - component: {fileID: 64838611}
+  - component: {fileID: 64838612}
   m_Layer: 0
   m_Name: npc
   m_TagString: Untagged
@@ -1232,10 +1259,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.388217
-  m_Height: 4.7764335
+  m_Radius: 0.52191514
+  m_Height: 2.3899212
   m_Direction: 1
-  m_Center: {x: 1.4822191, y: 0, z: 0.40599677}
+  m_Center: {x: 0, y: -0.16319516, z: 0}
 --- !u!23 &64838608
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1313,12 +1340,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
   lineasDialogo:
   - nombre mijo, necesitas 34 anios de experiencia recien salido de la universidad
+  - que es esto?
+  - 500 pesos?
+  - estas tratandod e sobornarme?????
+  - si crees que sobornarme va a funcionar, pues si funciono, si logras traerme a
+    alguno de los villanos
   tiempoEscritura: 0.05
+--- !u!65 &64838612
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64838606}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.451045, y: 1.9999998, z: 4.588921}
+  m_Center: {x: 2.2255232, y: 0, z: 0.2733177}
 --- !u!1 &77908193
 GameObject:
   m_ObjectHideFlags: 0
@@ -3699,7 +3752,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247144850}
-  m_LocalRotation: {x: 0.02632124, y: 0.9398706, z: 0.07445182, w: -0.3322761}
+  m_LocalRotation: {x: 0.026321232, y: 0.9398706, z: 0.07445181, w: -0.33227608}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3721,6 +3774,7 @@ GameObject:
   - component: {fileID: 257726617}
   - component: {fileID: 257726616}
   - component: {fileID: 257726620}
+  - component: {fileID: 257726621}
   m_Layer: 0
   m_Name: npc (3)
   m_TagString: Untagged
@@ -3743,7 +3797,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3828,11 +3882,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - oye tu! eres un superheroe verdad?
+  - me acaban de robar mi bolsa! :(
+  - esos mocosos se fueron cruzando el rio!
+  - detenlos y te recompenzare
+  - gracias muchacho, ten usa esto para comprarte algo bonito
   tiempoEscritura: 0.05
+--- !u!65 &257726621
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257726615}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.413329, y: 1.9999998, z: 4.3576846}
+  m_Center: {x: -0.14448076, y: 0, z: 0.18028119}
 --- !u!1 &287511984
 GameObject:
   m_ObjectHideFlags: 0
@@ -4266,6 +4346,7 @@ GameObject:
   - component: {fileID: 307142465}
   - component: {fileID: 307142464}
   - component: {fileID: 307142468}
+  - component: {fileID: 307142469}
   m_Layer: 0
   m_Name: npc (10)
   m_TagString: Untagged
@@ -4288,7 +4369,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4373,11 +4454,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - quieres algo de superheroes?
+  - tengo unos guantes de cocina, nose si te sirva?
+  - son better ware asi que si aguantan
   tiempoEscritura: 0.05
+--- !u!65 &307142469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307142463}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.7616057, y: 2, z: 3.934085}
+  m_Center: {x: -0.7699336, y: 0, z: 0.52307063}
 --- !u!1 &332900239
 GameObject:
   m_ObjectHideFlags: 0
@@ -5833,7 +5938,7 @@ Transform:
   - {fileID: 1002356406}
   - {fileID: 435920841}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &426151966
 GameObject:
@@ -6780,6 +6885,132 @@ Transform:
   m_Father: {fileID: 425438837}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: -341.79102, z: 0}
+--- !u!1 &464242633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 464242638}
+  - component: {fileID: 464242637}
+  - component: {fileID: 464242636}
+  - component: {fileID: 464242635}
+  - component: {fileID: 464242634}
+  m_Layer: 0
+  m_Name: npc (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &464242634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464242633}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  marcaDeDialogo: {fileID: 1665303522}
+  panelDialogo: {fileID: 1744296840}
+  textoDialogo: {fileID: 867721020}
+  lineasDialogo:
+  - 
+  tiempoEscritura: 0.05
+--- !u!136 &464242635
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464242633}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &464242636
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464242633}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c47e6a250d56ccd42bb354ee7b3c64c7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &464242637
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464242633}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &464242638
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464242633}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.071, y: 8.2513, z: -59.705}
+  m_LocalScale: {x: 0.6551131, y: 0.6551131, z: 0.6551131}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475565994
 GameObject:
   m_ObjectHideFlags: 0
@@ -7759,6 +7990,7 @@ GameObject:
   - component: {fileID: 533695476}
   - component: {fileID: 533695475}
   - component: {fileID: 533695479}
+  - component: {fileID: 533695480}
   m_Layer: 0
   m_Name: npc (5)
   m_TagString: Untagged
@@ -7781,7 +8013,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7866,11 +8098,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - tu cara me suena, ya nos conociamos?
+  - ...
+  - ah ya se quien eres!
+  - tu eres el primo del hermano del nieto del amigo de la novia del cunado del abuelo
+    tercero del dentisdta de la familia rodriguez!
+  - camaleon! hace rato que no te veia! y como esta la esposa?
+  - divorciado? nimodo de todas formas era una zorra, no te convenia. mira deja te
+    presento a una amiga mia, es toda una lagartija.
   tiempoEscritura: 0.05
+--- !u!65 &533695480
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533695474}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.453843, y: 2, z: 4.4030833}
+  m_Center: {x: 0.028590096, y: 0, z: -0.18057872}
 --- !u!1 &557875933
 GameObject:
   m_ObjectHideFlags: 0
@@ -8323,10 +8584,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 0}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - yo soy jaime
   tiempoEscritura: 0.05
 --- !u!136 &594194374
 CapsuleCollider:
@@ -8414,7 +8676,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &606974852
 GameObject:
@@ -10114,6 +10376,7 @@ GameObject:
   - component: {fileID: 740499318}
   - component: {fileID: 740499317}
   - component: {fileID: 740499321}
+  - component: {fileID: 740499322}
   m_Layer: 0
   m_Name: npc (12)
   m_TagString: Untagged
@@ -10136,7 +10399,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10202,7 +10465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740499316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8749, y: 9.3124, z: -42.887}
+  m_LocalPosition: {x: 1.01, y: 9.3124, z: -43.83}
   m_LocalScale: {x: 0.6551131, y: 0.6551131, z: 0.6551131}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10221,11 +10484,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - oye tu, haz visto al programador?
+  - el hijo de su madre me puso una tipografia que no le pedi!
+  - en cuanto lo encuentre me la va a pagar!
+  - todavia que le pago con pizza y me trata asi, pero ya vera!
   tiempoEscritura: 0.05
+--- !u!65 &740499322
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740499316}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.7758746, y: 2, z: 4.591561}
+  m_Center: {x: 0.12181322, y: 0, z: 0.18315247}
 --- !u!1 &743585622
 GameObject:
   m_ObjectHideFlags: 0
@@ -10584,6 +10872,7 @@ GameObject:
   - component: {fileID: 778673969}
   - component: {fileID: 778673968}
   - component: {fileID: 778673972}
+  - component: {fileID: 778673973}
   m_Layer: 0
   m_Name: npc (16)
   m_TagString: Untagged
@@ -10606,7 +10895,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10691,11 +10980,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - escuchaste? dicen que uno de los seguidores de la overja negra anda cercas del
+    area
+  - la oveja negra? no mames guey yo pense que otro villano
+  - no mames, la oveja negra me la pela
+  - bueno pero es para tanto
   tiempoEscritura: 0.05
+--- !u!65 &778673973
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778673967}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.5716696, y: 2, z: 2.834908}
+  m_Center: {x: -0.80017656, y: 0, z: -0.9174539}
 --- !u!1 &781082332
 GameObject:
   m_ObjectHideFlags: 0
@@ -12708,6 +13023,7 @@ GameObject:
   - component: {fileID: 910854063}
   - component: {fileID: 910854062}
   - component: {fileID: 910854066}
+  - component: {fileID: 910854067}
   m_Layer: 0
   m_Name: npc (13)
   m_TagString: Untagged
@@ -12730,7 +13046,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12815,11 +13131,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - meow (que vez culero)
   tiempoEscritura: 0.05
+--- !u!65 &910854067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910854061}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.137999, y: 2.3754964, z: 3.2718396}
+  m_Center: {x: 0.27293667, y: 0.18774842, z: 0.8045409}
 --- !u!1 &924179089
 GameObject:
   m_ObjectHideFlags: 0
@@ -12833,6 +13171,7 @@ GameObject:
   - component: {fileID: 924179091}
   - component: {fileID: 924179090}
   - component: {fileID: 924179094}
+  - component: {fileID: 924179095}
   m_Layer: 0
   m_Name: npc (6)
   m_TagString: Untagged
@@ -12855,7 +13194,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12940,11 +13279,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - TAMALES
+  - TAMALES
+  - DE ROJO
+  - DE VERDE
+  - DE POLLO
+  - Y DE PERRO
+  - COMPRE SUS TAMALES
   tiempoEscritura: 0.05
+--- !u!65 &924179095
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924179089}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.6126437, y: 2, z: 4.6013613}
+  m_Center: {x: 0.18806085, y: 0, z: -0.26351804}
 --- !u!1 &928041183
 GameObject:
   m_ObjectHideFlags: 0
@@ -14705,6 +15072,7 @@ GameObject:
   - component: {fileID: 1058550949}
   - component: {fileID: 1058550948}
   - component: {fileID: 1058550947}
+  - component: {fileID: 1058550952}
   m_Layer: 0
   m_Name: npc (19)
   m_TagString: Untagged
@@ -14724,10 +15092,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 0}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - 'a donde tan peinado '
+  - andele de regreso o me lo voy llevando conmigo
   tiempoEscritura: 0.05
 --- !u!136 &1058550948
 CapsuleCollider:
@@ -14815,8 +15185,29 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1058550952
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058550946}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.8313823, y: 2, z: 2.807563}
+  m_Center: {x: 0.915691, y: 0, z: 0.08327397}
 --- !u!1 &1061605785
 GameObject:
   m_ObjectHideFlags: 0
@@ -14955,7 +15346,7 @@ Transform:
   - {fileID: 1720987483}
   - {fileID: 247144852}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1073387550
 GameObject:
@@ -16125,6 +16516,7 @@ GameObject:
   - component: {fileID: 1152871670}
   - component: {fileID: 1152871669}
   - component: {fileID: 1152871673}
+  - component: {fileID: 1152871674}
   m_Layer: 0
   m_Name: npc (8)
   m_TagString: Untagged
@@ -16147,7 +16539,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -16232,11 +16624,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - cacahuates? pistaches?
+  - a cuanto la bolsa?
+  - a 5 pesitos
+  - con sal limon y chile
+  - solo aceptamos belletes de 20 y 50
   tiempoEscritura: 0.05
+--- !u!65 &1152871674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152871668}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.624339, y: 2, z: 3.6059551}
+  m_Center: {x: 0.40018836, y: 0, z: 0.23454592}
 --- !u!1 &1155730615
 GameObject:
   m_ObjectHideFlags: 0
@@ -17960,6 +18378,7 @@ GameObject:
   - component: {fileID: 1269539369}
   - component: {fileID: 1269539368}
   - component: {fileID: 1269539367}
+  - component: {fileID: 1269539372}
   m_Layer: 0
   m_Name: npc (18)
   m_TagString: Untagged
@@ -17979,10 +18398,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - 'aver mocoso, tengo 100 dolares a tu nombre. '
+  - no me decepciones
   tiempoEscritura: 0.05
 --- !u!136 &1269539368
 CapsuleCollider:
@@ -17999,7 +18420,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -18070,8 +18491,29 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1269539372
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269539366}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.4541354, y: 1.9999998, z: 3.834039}
+  m_Center: {x: 0.0038214782, y: 0, z: -1.41702}
 --- !u!1 &1276429862
 GameObject:
   m_ObjectHideFlags: 0
@@ -18797,8 +19239,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1744296841}
+  - {fileID: 1665303523}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -19658,6 +20101,7 @@ GameObject:
   - component: {fileID: 1363411171}
   - component: {fileID: 1363411170}
   - component: {fileID: 1363411174}
+  - component: {fileID: 1363411175}
   m_Layer: 0
   m_Name: npc (7)
   m_TagString: Untagged
@@ -19680,7 +20124,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -19746,7 +20190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363411169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0871, y: 9.3124, z: -40.551}
+  m_LocalPosition: {x: -7.4, y: 9.3124, z: -43.04}
   m_LocalScale: {x: 0.6551131, y: 0.6551131, z: 0.6551131}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19765,11 +20209,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - ya te la sabes carnal
+  - cartera y celullar donde los pueda ver
+  - y n ise te ocurra ir con la poli que despues te va peor
   tiempoEscritura: 0.05
+--- !u!65 &1363411175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363411169}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.7516637, y: 2, z: 3.4503424}
+  m_Center: {x: 0.8758317, y: 0, z: -0.2359143}
 --- !u!1 &1365589478
 GameObject:
   m_ObjectHideFlags: 0
@@ -20203,6 +20671,7 @@ GameObject:
   - component: {fileID: 1421409012}
   - component: {fileID: 1421409011}
   - component: {fileID: 1421409015}
+  - component: {fileID: 1421409016}
   m_Layer: 0
   m_Name: npc (14)
   m_TagString: Untagged
@@ -20225,7 +20694,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -20310,11 +20779,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - 'oye vato, ayudame. '
+  - perdi mis lentes y sin ellos no puedo ver
+  - si logras encontrarlos, te dare un toston
+  - muchas gracias! ten, justo como lo prometi
+  - 50 centavos!
   tiempoEscritura: 0.05
+--- !u!65 &1421409016
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421409010}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.5279756, y: 2, z: 5.223841}
+  m_Center: {x: -0.6614905, y: 0, z: 0.19986436}
 --- !u!1 &1422976954
 GameObject:
   m_ObjectHideFlags: 0
@@ -21900,7 +22395,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504893920}
-  m_LocalRotation: {x: 0.02632124, y: 0.93987066, z: 0.07445182, w: -0.3322761}
+  m_LocalRotation: {x: 0.026321238, y: 0.93987066, z: 0.07445181, w: -0.3322761}
   m_LocalPosition: {x: 39.975193, y: 8.95, z: -40.202137}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22165,6 +22660,7 @@ GameObject:
   - component: {fileID: 1528747103}
   - component: {fileID: 1528747102}
   - component: {fileID: 1528747106}
+  - component: {fileID: 1528747107}
   m_Layer: 0
   m_Name: npc (15)
   m_TagString: Untagged
@@ -22187,7 +22683,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -22272,11 +22768,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - que haces ahi?
+  - me escondo de la disenadora.  me quiere funar en twitter
+  - si la vez, tu y yo no nos conocemos
   tiempoEscritura: 0.05
+--- !u!65 &1528747107
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528747101}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.5315087, y: 2, z: 2.9281857}
+  m_Center: {x: 0.21358326, y: 0, z: 0.09413124}
 --- !u!1 &1542608628
 GameObject:
   m_ObjectHideFlags: 0
@@ -22591,111 +23111,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 425438837}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1568948767
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1568948771}
-  - component: {fileID: 1568948770}
-  - component: {fileID: 1568948769}
-  - component: {fileID: 1568948768}
-  m_Layer: 0
-  m_Name: narcador
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1568948768
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568948767}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1568948769
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568948767}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1568948770
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568948767}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1568948771
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568948767}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.017, y: 10.46, z: -43.19}
-  m_LocalScale: {x: 0.26395, y: 0.8422, z: 0.2513}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1589217242
 GameObject:
@@ -23595,6 +24010,8 @@ GameObject:
   - component: {fileID: 1616938038}
   - component: {fileID: 1616938037}
   - component: {fileID: 1616938036}
+  - component: {fileID: 1616938040}
+  - component: {fileID: 1616938041}
   m_Layer: 0
   m_Name: npc (4)
   m_TagString: Untagged
@@ -23617,7 +24034,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -23683,13 +24100,55 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616938035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.2872, y: 9.3124, z: -47.054}
+  m_LocalPosition: {x: 3.56, y: 9.3124, z: -52.3}
   m_LocalScale: {x: 0.6551131, y: 0.6551131, z: 0.6551131}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1616938040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616938035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  marcaDeDialogo: {fileID: 1665303522}
+  panelDialogo: {fileID: 1744296840}
+  textoDialogo: {fileID: 867721020}
+  lineasDialogo:
+  - Oye nino? alguna vez has escuchado la leeyenda del hospital embrujado a dos cuadras
+    de aqui?
+  - no?
+  - 'pues yo tampoco, asi que si la escuchas me la cuentas '
+  tiempoEscritura: 0.05
+--- !u!65 &1616938041
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616938035}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.5716195, y: 2, z: 4.2670007}
+  m_Center: {x: -0.22893548, y: 0, z: 0.05271835}
 --- !u!1 &1622743278
 GameObject:
   m_ObjectHideFlags: 0
@@ -24123,6 +24582,7 @@ GameObject:
   - component: {fileID: 1665000899}
   - component: {fileID: 1665000898}
   - component: {fileID: 1665000897}
+  - component: {fileID: 1665000902}
   m_Layer: 0
   m_Name: npc (20)
   m_TagString: Untagged
@@ -24142,10 +24602,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 0}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - estuvo feo
+  - ey...tuvo feo
+  - de frente
+  - si de frente....
+  - que se puede hacer
+  - na, que puede hacer
   tiempoEscritura: 0.05
 --- !u!136 &1665000898
 CapsuleCollider:
@@ -24233,8 +24699,164 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1665000902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665000896}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.951373, y: 2, z: 3.103387}
+  m_Center: {x: 0.97568643, y: 0, z: 0.07390209}
+--- !u!1 &1665303522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1665303523}
+  - component: {fileID: 1665303525}
+  - component: {fileID: 1665303524}
+  m_Layer: 5
+  m_Name: peress A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1665303523
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665303522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1310997983}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1665303524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665303522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'press A to interract '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1665303525
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665303522}
+  m_CullTransparentMesh: 1
 --- !u!1 &1686023788
 GameObject:
   m_ObjectHideFlags: 0
@@ -27680,6 +28302,7 @@ GameObject:
   - component: {fileID: 1885017398}
   - component: {fileID: 1885017397}
   - component: {fileID: 1885017401}
+  - component: {fileID: 1885017402}
   m_Layer: 0
   m_Name: npc (9)
   m_TagString: Untagged
@@ -27702,7 +28325,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -27787,11 +28410,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - trajes de superheroe? no mijo... los ultimos disfraces se me vendieron en la
+    manana
+  - y no resurten hasta el jueves de la siguiente semana
+  - pero te puedo vender otro? tengo piezas de disfracez descontinuados
+  - espero te sirvan
   tiempoEscritura: 0.05
+--- !u!65 &1885017402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885017396}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.8744822, y: 2.019849, z: 3.4924307}
+  m_Center: {x: -0.1502864, y: 0.009924689, z: 0.43705097}
 --- !u!1 &1885781573
 GameObject:
   m_ObjectHideFlags: 0
@@ -28743,6 +29392,7 @@ GameObject:
   - component: {fileID: 1942985938}
   - component: {fileID: 1942985937}
   - component: {fileID: 1942985941}
+  - component: {fileID: 1942985942}
   m_Layer: 0
   m_Name: npc (17)
   m_TagString: Untagged
@@ -28765,7 +29415,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -28850,11 +29500,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - oye camaleon, quieres un mazapan? te lo vendo en 10 pesos
+  - no gracias jovenm
+  - espera es mas, por que me caes muy bien te lo dejo en 15
+  - ahi pa la proxima joven
+  - no no espera! te lo regalo! solo dame 50 pesos!
   tiempoEscritura: 0.05
+--- !u!65 &1942985942
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942985936}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.9928684, y: 2, z: 3.7907236}
+  m_Center: {x: 0.28416663, y: 0, z: -0.14427547}
 --- !u!1 &1964454456
 GameObject:
   m_ObjectHideFlags: 0
@@ -29498,6 +30174,7 @@ GameObject:
   - component: {fileID: 1992740219}
   - component: {fileID: 1992740218}
   - component: {fileID: 1992740222}
+  - component: {fileID: 1992740223}
   m_Layer: 0
   m_Name: npc (2)
   m_TagString: Untagged
@@ -29520,7 +30197,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -29586,7 +30263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992740217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.27, y: 9.29, z: -52.76}
+  m_LocalPosition: {x: -4.63, y: 9.29, z: -47.75}
   m_LocalScale: {x: 0.67296, y: 0.67296, z: 0.67296}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29605,11 +30282,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732035b6a1c9caf459d5d3298ce3ac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marcaDeDialogo: {fileID: 1568948767}
+  marcaDeDialogo: {fileID: 1665303522}
   panelDialogo: {fileID: 1744296840}
   textoDialogo: {fileID: 867721020}
-  lineasDialogo: []
+  lineasDialogo:
+  - Se compran
+  - colchones
+  - tambores
+  - refrigeradores
+  - lavadoras
+  - microhondas
+  - o algo de fierro viejo que vendaaaaaaaaaaan
   tiempoEscritura: 0.05
+--- !u!65 &1992740223
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992740217}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.7564821, y: 1.9999998, z: 4.625547}
+  m_Center: {x: 0.5008636, y: 0, z: 0.1778618}
 --- !u!1 &1995414155
 GameObject:
   m_ObjectHideFlags: 0
