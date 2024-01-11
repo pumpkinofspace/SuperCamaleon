@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class Trampolin : MonoBehaviour
 {
+    [SerializeField]
     public float boing;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log(collision.gameObject.name);
-        collision.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, boing, 0)); 
+
+        CharacterController characterController = collision.gameObject.GetComponent<CharacterController>();
+
+        if (characterController != null)
+        {
+            characterController.Move(Vector3.up * boing);
+        }
+
     }
+
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MovementeUp : MonoBehaviour
 {
+    [SerializeField]
     public CharacterController controller;
 
     public float speed;
@@ -13,6 +14,10 @@ public class MovementeUp : MonoBehaviour
     public float gravity = 9.81f;
     float yVelocity = 0f;
     bool isGrounded;
+    bool isGroundedController;
+
+
+    public float raycastDistance = 0.2f;
 
     public float jumpForce = 5f; // Fuerza del salto
     bool isJumping = false;
@@ -38,9 +43,10 @@ public class MovementeUp : MonoBehaviour
         }
 
         // Aplicar gravedad
-        isGrounded = controller.isGrounded;
+        isGrounded = CheckIfGrounded();
+        isGroundedController = controller.isGrounded;
 
-        if (!isGrounded)
+        if (!isGroundedController)
         {
             yVelocity -= gravity * Time.deltaTime;
         }
@@ -54,7 +60,7 @@ public class MovementeUp : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump"))
             {
-                Debug.Log("saltando");
+               // Debug.Log("saltando");
                 yVelocity = Mathf.Sqrt(jumpForce * 2f * gravity);
                 isJumping = true;
             }
@@ -62,5 +68,10 @@ public class MovementeUp : MonoBehaviour
 
         Vector3 verticalVelocity = Vector3.up * yVelocity;
         controller.Move(verticalVelocity * Time.deltaTime);
+    }
+
+    bool CheckIfGrounded()
+    {
+        return Physics.Raycast(transform.position, Vector3.down, raycastDistance);
     }
 }
