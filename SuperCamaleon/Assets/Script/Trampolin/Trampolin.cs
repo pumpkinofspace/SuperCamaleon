@@ -11,13 +11,14 @@ public class Trampolin : MonoBehaviour
     {
         Debug.Log(collision.gameObject.name);
 
-        CharacterController characterController = collision.gameObject.GetComponent<CharacterController>();
+        MovementeUp characterController = collision.gameObject.GetComponent<MovementeUp>();
 
         if (characterController != null)
         {
-            characterController.Move(Vector3.up * boing);
+            characterController.saltoTrampolin(boing);
         }
 
     }
+    
 
 }

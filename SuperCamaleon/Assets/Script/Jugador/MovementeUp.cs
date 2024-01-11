@@ -60,9 +60,7 @@ public class MovementeUp : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump"))
             {
-               // Debug.Log("saltando");
-                yVelocity = Mathf.Sqrt(jumpForce * 2f * gravity);
-                isJumping = true;
+                saltoFuncion();
             }
         }
 
@@ -74,4 +72,19 @@ public class MovementeUp : MonoBehaviour
     {
         return Physics.Raycast(transform.position, Vector3.down, raycastDistance);
     }
+
+    void saltoFuncion()
+    {
+        // Debug.Log("saltando");
+        yVelocity = Mathf.Sqrt(jumpForce * 2f * gravity);
+        isJumping = true;
+    }
+
+    public void saltoTrampolin(float fuerzaSalto)
+    {
+        yVelocity = Mathf.Sqrt(fuerzaSalto * 2f * gravity);
+        isJumping = true;
+    }
+
+    
 }
