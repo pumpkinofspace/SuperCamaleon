@@ -6,19 +6,31 @@ public class Trampolin : MonoBehaviour
 {
     [SerializeField]
     public float boing;
+    public GameObject jugador; 
+
+
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
-
-        MovementeUp characterController = collision.gameObject.GetComponent<MovementeUp>();
-
-        if (characterController != null)
+        
+        
+        if(collision.gameObject.tag == "Player")
         {
-            characterController.saltoTrampolin(boing);
+           
+           jugador.GetComponent<MovementeUp>().saltoTrampolin(boing);
         }
 
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+
+            jugador.GetComponent<MovementeUp>().saltoTrampolin(boing);
+        }
+
+    }
+
 
 }

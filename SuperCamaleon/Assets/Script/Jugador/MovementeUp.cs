@@ -56,12 +56,12 @@ public class MovementeUp : MonoBehaviour
         }
 
         // Salto
-        if (isGrounded)
+        if (isGrounded && Input.GetButtonDown("Jump"))
         {
-            if (Input.GetButtonDown("Jump"))
-            {
                 saltoFuncion();
-            }
+            
+        }else if (isJumping) {
+            yVelocity -= gravity * Time.deltaTime;
         }
 
         Vector3 verticalVelocity = Vector3.up * yVelocity;
@@ -72,6 +72,7 @@ public class MovementeUp : MonoBehaviour
     {
         return Physics.Raycast(transform.position, Vector3.down, raycastDistance);
     }
+    
 
     void saltoFuncion()
     {
@@ -82,8 +83,12 @@ public class MovementeUp : MonoBehaviour
 
     public void saltoTrampolin(float fuerzaSalto)
     {
+       // float noSalto = transform.position.y;
+        Debug.Log("LLegamos hasta aqui");
         yVelocity = Mathf.Sqrt(fuerzaSalto * 2f * gravity);
         isJumping = true;
+       
+
     }
 
     
